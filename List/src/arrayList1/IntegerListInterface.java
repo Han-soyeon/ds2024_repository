@@ -22,7 +22,6 @@ public interface IntegerListInterface {
 
 	void clear();
 
-	// 현재 모든 원소 출력
 	void printAll();
 
 }
