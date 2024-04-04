@@ -9,7 +9,17 @@ public class Main {
 		list.add(0, 5);
 		list.add(1, 8);
 		list.add(2, 16);
+		list.add(3,9);
+		
 		list.append(28);
+		list.append(30);
+		list.append(65);
+		
+		list.remove(0);
+		
+		list.removeItem(28);
+		list.removeItem(16);
+				
 		list.printAll();
 
 	}

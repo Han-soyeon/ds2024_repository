@@ -1,5 +1,7 @@
 package arrayList_generic2;
 
+import commmon.ListInterface;
+
 public class ArrayList<E> implements ListInterface<E> {
 
 	private static final int Default_capacity = 64;

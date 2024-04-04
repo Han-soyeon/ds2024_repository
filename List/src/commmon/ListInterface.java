@@ -1,4 +1,4 @@
-package arrayList_generic2;
+package commmon;
 
 public interface ListInterface<E> {
 

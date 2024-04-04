@@ -1,13 +1,15 @@
 package student;
 
-import arrayList_generic2.ArrayList;
-import arrayList_generic2.ListInterface;
+//import arrayList_generic2.ArrayList;
+import commmon.ListInterface;
+import linkedlist_generic.LinkedList;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		ListInterface<Student> studentList = new ArrayList<>();
+		//ListInterface<Student> studentList = new ArrayList<>();
+
+		ListInterface<Student> studentList = new LinkedList<>();
 
 		studentList.add(0, new Student("한소연", "010-1234-5678"));
 		studentList.add(1, new Student("홍길동", "010-1234-5678"));

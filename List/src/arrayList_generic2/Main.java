@@ -1,5 +1,7 @@
 package arrayList_generic2;
 
+import commmon.ListInterface;
+
 public class Main {
 
 	public static void main(String[] args) {
