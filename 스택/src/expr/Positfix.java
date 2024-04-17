@@ -7,10 +7,10 @@ public class Positfix {
 	public static void main(String[] args) {
 		// 후위 표기법
 		//String positfix = "32 5 + 4 * 10 5 / +";
-		String positfix = "700 3 47 + 6 * - 4 /";
-		int result = evaluate(positfix);
+		String postfix = "700 3 47 + 6 * - 4 /";
+		int result = evaluate(postfix);
 		
-		System.out.println("Input string: " + positfix);
+		System.out.println("Input string: " + postfix);
 		System.out.println("Answer: " + result);
 
 	}
