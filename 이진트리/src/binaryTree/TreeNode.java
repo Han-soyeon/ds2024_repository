@@ -12,7 +12,7 @@ public class TreeNode<E> {
 		this.right = this.right = null;
 	}
 	
-	// 위의 생성자를 통해 트리를 만든다.
+	// 위의 생성자를 통해 트리를 만든
 
 	// getter & setter
 
