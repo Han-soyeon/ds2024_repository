@@ -4,7 +4,7 @@ public class BinaryTree<E> {
 	TreeNode<E> root;
 
 	public BinaryTree() {
-		root = null;
+		this.root = null;
 	}
 
 	// 처음 시작을 root로 하는 것을 생성자를 통해 하도록 구성
@@ -22,13 +22,13 @@ public class BinaryTree<E> {
 			return;
 		}
 		// 출력을 옆으로 나올 수 있도록 함(print)
-		System.out.print(root.item); // V
-		preOrder(root.right); // L
+		System.out.print(root.item + " "); // V
+		preOrder(root.left); // L
 		preOrder(root.right); // R
 	}
 	
 	public void inOrder() {
-		preOrder(root);
+		inOrder(root);
 		System.out.println();
 	}
 
@@ -41,13 +41,13 @@ public class BinaryTree<E> {
 			return;
 		}
 		// 출력을 옆으로 나올 수 있도록 함(print)
-		preOrder(root.right); // L
-		System.out.print(root.item); // V
-		preOrder(root.right); // R
+		inOrder(root.left); // L
+		System.out.print(root.item + " "); // V
+		inOrder(root.right); // R
 	}
 	
 	public void postOrder() {
-		preOrder(root);
+		postOrder(root);
 		System.out.println();
 	}
 
@@ -60,8 +60,8 @@ public class BinaryTree<E> {
 			return;
 		}
 		// 출력을 옆으로 나올 수 있도록 함(print)
-		preOrder(root.right); // L
-		preOrder(root.right); // R
-		System.out.print(root.item); // V
+		postOrder(root.left); // L
+		postOrder(root.right); // R
+		System.out.print(root.item + " "); // V
 	}
 }
